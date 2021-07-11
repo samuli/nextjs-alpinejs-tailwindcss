@@ -14,14 +14,14 @@
          <script type="text/javascript" src="/foo.js" />
        </Head>
        ```
-   - Inline the source file using webpack's raw-loader `dangerouslySetInnerHTML` (see https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/counter.js)
-   - For critical js, inline the source to the Head-tag (see https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/_document.js)
+   - Inline the source file using webpack's raw-loader `dangerouslySetInnerHTML` (see [counter.js](https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/counter.js))
+   - For critical js, inline the source to the Head-tag (see [_document.js](https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/_document.js))
+- Configure `throwIfNamespace": false` to make Alpine's hyphen-separated attributes work with Next (see [.babelrc](https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/.babelrc))
 - Note: if an element's markup is changed by AlpineJS (for example when using Alpine's `x-text`) you might get a React warning in development-mode (e.g. Warning: Text content did not match). To prevent this, wrap the element in <StaticContent>:
   ``` 
   <StaticContent><button x-on:click="open = !open" x-text="open ? 'hide' : 'show'">Toggle</button></StaticContent>
   ```
-  This prevents Next.js from rendering (and hence also hot-reloading) the element on the client-side (see https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/counter.js). 
- 
+  This prevents Next.js from rendering (and hence also hot-reloading) the element on the client-side (see [counter.js](https://github.com/samuli/nextjs-alpinejs-tailwindcss/blob/main/pages/counter.js)).
 ## References:
 - https://www.johanbleuzen.fr/blog/next-remove-clientside-javascript
 - https://webcloud.se/blog/2020-03-12-nextjs-without-client-side-react/
