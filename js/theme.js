@@ -1,5 +1,4 @@
 (function(window, document) {
-    console.log("theme2");
   var matcher = window.matchMedia("(prefers-color-scheme: dark)");
   var userPreference = matcher.matches;
   window.DARK_THEME = false;
