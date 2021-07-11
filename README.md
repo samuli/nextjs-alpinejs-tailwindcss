@@ -1,5 +1,9 @@
 # Next.js static site with AlpineJS and tailwindcss
 
+
+[Demo](https://60eadbb216850098e1caa2d0--naughty-beaver-b42d94.netlify.app)
+
+
 References:
 - https://www.johanbleuzen.fr/blog/next-remove-clientside-javascript
 - https://webcloud.se/blog/2020-03-12-nextjs-without-client-side-react/
