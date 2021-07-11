@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body {
   padding: 0;
@@ -8,9 +13,20 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 * {
   box-sizing: border-box;
+}
+
+
+h1 {
+  @apply text-2xl font-bold my-2;
+}
+
+button {
+  @apply
+    bg-gray-200 border-gray-400 dark:bg-gray-100 text-gray-900 dark:text-gray-900
+    border px-1 rounded-sm cursor-pointer;
 }

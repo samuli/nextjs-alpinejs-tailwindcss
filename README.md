@@ -1,3 +1,12 @@
+# Next.js static site with AlpineJS and tailwindcss
+
+References:
+- https://www.johanbleuzen.fr/blog/next-remove-clientside-javascript
+- https://webcloud.se/blog/2020-03-12-nextjs-without-client-side-react/
+
+---
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
